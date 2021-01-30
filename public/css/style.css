@@ -1,0 +1,67 @@
+/**
+*Override CSS's
+*/
+
+.navbar-expand-lg, .navbar-light, .bg-light{
+	margin-right:auto!important;
+	margin-top: 12px;
+	margin-bottom: -10px;
+	background-color: #000000!important;
+
+
+}
+.nav-item{
+	
+
+}
+.hidden{
+	display: none;
+}
+
+.bg.light{
+	background-color: #0000000!important;
+}
+
+
+
+body{
+	position: relative;
+	min-height: 100%;
+	width: none;
+	 height: auto;
+	padding-bottom: 5rem;
+}
+
+.margin-top-20{
+	margin-top: 20px;
+}
+.feature_img{
+	max-height: 160px;
+}
+.footer-bottom {
+
+	padding: 20px;
+	margin-top: 20px;
+	background: #000000;
+	color: white;
+}
+.pointer{
+	cursor: pointer;
+}
+.product_item{
+	background: #dcf4fc;
+}
+.child-rows{
+	padding-left: 20px;
+	border-left: 1px solid #dfdfdf;
+	background: #FFF;
+}
+.child-rows a.list-group-item{
+	border-left:0px!important;
+}
+.list-group-item.active{
+	z-index: 2;
+	color: #fff;
+	background-color: #02aadd;
+	border-radius: 0px!important;
+}
