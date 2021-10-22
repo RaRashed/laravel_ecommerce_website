@@ -22,6 +22,10 @@ class CreateOrdersTable extends Migration
             $table->string('phone_no');
             $table->text('Shipping_address');
             $table->string('email')->nullable();
+            $table->string('shipping_charge')->nullable();
+            $table->string('custom_discount')->nullable();
+
+
             $table->text('message')->nullable();
             $table->boolean('is_paid')->default(0);
             $table->boolean('is_completed')->default(0);
@@ -32,9 +36,11 @@ class CreateOrdersTable extends Migration
         $table->foreign('user_id')
       ->references('id')->on('users')
       ->onDelete('cascade');
+
           $table->foreign('payment_id')
       ->references('id')->on('payments')
       ->onDelete('cascade');
+
         });
     }
 

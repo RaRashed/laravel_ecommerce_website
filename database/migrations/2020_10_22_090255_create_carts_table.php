@@ -16,12 +16,12 @@ class CreateCartsTable extends Migration
         Schema::create('carts', function (Blueprint $table) {
             $table->bigIncrements('id');
 
-              $table->unsignedBigInteger('product_id');
-            $table->unsignedBigInteger('user_id')->nullable();
-              $table->unsignedBigInteger('order_id')->nullable();
+              $table->bigInteger('product_id')->unsigned();
+            $table->bigInteger('user_id')->unsigned()->nullable();
+              $table->bigInteger('order_id')->unsigned()->nullable();
             $table->string('ip_address')->nullable();
             $table->integer('product_quantity')->default(1);
-        
+
             $table->timestamps();
 
 

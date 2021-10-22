@@ -9,12 +9,12 @@ use App\Models\Product;
 class Category extends Model
 {
     public function parent(){
-    	
+
     	return $this->belongsTo(Category::Class, 'parent_id');
     }
 
       public function products(){
-    	
+
     	return $this->hasMany(Product::Class);
     }
 

@@ -3,7 +3,9 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use App\Models\Cart;
+use App\Models\User;
+use App\Models\Product;
+use App\Models\Order;
 use Auth;
 use DB;
 use Session;
@@ -16,7 +18,7 @@ class Cart extends Model
     	'product_id',
     	'product_quantity',
     	'order_id',
-    	];   
+    	];
 
     	 public function user(){
     	return $this->belongsTo(User::class);
@@ -29,17 +31,17 @@ class Cart extends Model
     }
 
 
-    
+
     /* public static function totalCarts(){
 
         if(Auth::check()){
 
        // $carts = Cart::orWhere('user_id', Auth::id())
-               // ->orWhere('ip_address', $request->ip()) 
+               // ->orWhere('ip_address', $request->ip())
                 //->get();
 
               $carts = Cart::where('user_id', Auth::id())
-              
+
                 ->where('order_id',NULL)
                 ->get();
             }
@@ -48,22 +50,22 @@ class Cart extends Model
                 $carts = Cart::where('ip_address', $ip_address ?? '')->where('order_id',NULL)->get();
 
             }
-           
+
        //dd($carts);
         return $carts;
-     
+
     }
-    
+
     public static function totalitems(){
 
         if(Auth::check()){
 
        // $carts = Cart::orWhere('user_id', Auth::id())
-               // ->orWhere('ip_address', $request->ip()) 
+               // ->orWhere('ip_address', $request->ip())
                 //->get();
 
               $carts = Cart::where('user_id', Auth::id())
-            
+
                 ->where('order_id',NULL)
                 ->get();
             }
@@ -76,12 +78,12 @@ class Cart extends Model
         foreach ($carts as $cart) {
             $total_item +=$cart->product_quantity;
         }
-     
+
         return $total_item;
 
-     
+
     }
-    
+
 /*
     public static function cartCount(){
 
@@ -98,14 +100,14 @@ class Cart extends Model
         return $cartCount;
     }
     */
-    
+
 
      public static function totalCarts(){
 
         if(Auth::check()){
 
        // $carts = Cart::orWhere('user_id', Auth::id())
-               // ->orWhere('ip_address', $request->ip()) 
+               // ->orWhere('ip_address', $request->ip())
                 //->get();
 
               $carts = Cart::where('user_id', Auth::id())
@@ -118,18 +120,18 @@ class Cart extends Model
                 $carts = Cart::orWhere('ip_address', $ip_address ?? '') ->where('order_id',NULL)->get();
 
             }
-           
+
       // dd($carts);
         return $carts;
-     
+
     }
-    
+
     public static function totalitems(){
 
         if(Auth::check()){
 
        // $carts = Cart::orWhere('user_id', Auth::id())
-               // ->orWhere('ip_address', $request->ip()) 
+               // ->orWhere('ip_address', $request->ip())
                 //->get();
 
               $carts = Cart::where('user_id', Auth::id())
@@ -149,7 +151,7 @@ class Cart extends Model
       //dd($total_item);
         return $total_item;
 
-     
+
     }
 
 
