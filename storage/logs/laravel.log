@@ -8843,3 +8843,53 @@ Did you mean one of these?
 #29 C:\\Users\ashe\\OneDrive\\Desktop\\laravel\\ecom\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
 #30 {main}
 "} 
+[2022-07-30 20:27:19] local.ERROR: Cannot declare class CreateOrdersTable, because the name is already in use {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalErrorException(code: 64): Cannot declare class CreateOrdersTable, because the name is already in use at C:\\Users\ashe\\OneDrive\\Desktop\\laravel\\ecom\\database\\migrations\\2022_07_30_201659_create_orders_table.php:56)
+[stacktrace]
+#0 {main}
+"} 
+[2022-07-30 20:27:42] local.ERROR: Cannot declare class CreateOrdersTable, because the name is already in use {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalErrorException(code: 64): Cannot declare class CreateOrdersTable, because the name is already in use at C:\\Users\ashe\\OneDrive\\Desktop\\laravel\\ecom\\database\\migrations\\2022_07_30_201659_create_orders_table.php:56)
+[stacktrace]
+#0 {main}
+"} 
+[2022-07-30 20:28:03] local.ERROR: Cannot declare class CreateOrdersTable, because the name is already in use {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalErrorException(code: 64): Cannot declare class CreateOrdersTable, because the name is already in use at C:\\Users\ashe\\OneDrive\\Desktop\\laravel\\ecom\\database\\migrations\\2022_07_30_201659_create_orders_table.php:56)
+[stacktrace]
+#0 {main}
+"} 
+[2022-07-30 20:28:41] local.ERROR: Cannot declare class CreateOrdersTable, because the name is already in use {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalErrorException(code: 64): Cannot declare class CreateOrdersTable, because the name is already in use at C:\\Users\ashe\\OneDrive\\Desktop\\laravel\\ecom\\database\\migrations\\2022_07_30_201659_create_orders_table.php:56)
+[stacktrace]
+#0 {main}
+"} 
+[2022-07-30 20:30:32] local.ERROR: Cannot declare class CreateOrdersTable, because the name is already in use {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalErrorException(code: 64): Cannot declare class CreateOrdersTable, because the name is already in use at C:\\Users\ashe\\OneDrive\\Desktop\\laravel\\ecom\\database\\migrations\\2022_07_30_201659_create_orders_table.php:56)
+[stacktrace]
+#0 {main}
+"} 
+[2022-07-30 20:31:22] local.ERROR: Cannot declare class CreateOrdersTable, because the name is already in use {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalErrorException(code: 64): Cannot declare class CreateOrdersTable, because the name is already in use at C:\\Users\ashe\\OneDrive\\Desktop\\laravel\\ecom\\database\\migrations\\2022_07_30_201659_create_orders_table.php:56)
+[stacktrace]
+#0 {main}
+"} 
+[2022-07-30 20:32:25] local.ERROR: Cannot declare class CreateOrdersTable, because the name is already in use {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalErrorException(code: 64): Cannot declare class CreateOrdersTable, because the name is already in use at C:\\Users\ashe\\OneDrive\\Desktop\\laravel\\ecom\\database\\migrations\\2022_07_30_201659_create_orders_table.php:56)
+[stacktrace]
+#0 {main}
+"} 
+[2022-07-30 20:33:51] local.ERROR: A CreateDivisionsTable class already exists. {"exception":"[object] (InvalidArgumentException(code: 0): A CreateDivisionsTable class already exists. at C:\\Users\ashe\\OneDrive\\Desktop\\laravel\\ecom\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\MigrationCreator.php:90)
+[stacktrace]
+#0 C:\\Users\ashe\\OneDrive\\Desktop\\laravel\\ecom\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\MigrationCreator.php(50): Illuminate\\Database\\Migrations\\MigrationCreator->ensureMigrationDoesntAlreadyExist('create_division...', 'C:\\\\Users\\\ashe\\\\...')
+#1 C:\\Users\ashe\\OneDrive\\Desktop\\laravel\\ecom\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateMakeCommand.php(110): Illuminate\\Database\\Migrations\\MigrationCreator->create('create_division...', 'C:\\\\Users\\\ashe\\\\...', 'divisions', true)
+#2 C:\\Users\ashe\\OneDrive\\Desktop\\laravel\\ecom\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateMakeCommand.php(94): Illuminate\\Database\\Console\\Migrations\\MigrateMakeCommand->writeMigration('create_division...', 'divisions', true)
+#3 [internal function]: Illuminate\\Database\\Console\\Migrations\\MigrateMakeCommand->handle()
+#4 C:\\Users\ashe\\OneDrive\\Desktop\\laravel\\ecom\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(32): call_user_func_array(Array, Array)
+#5 C:\\Users\ashe\\OneDrive\\Desktop\\laravel\\ecom\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(37): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#6 C:\\Users\ashe\\OneDrive\\Desktop\\laravel\\ecom\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(90): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#7 C:\\Users\ashe\\OneDrive\\Desktop\\laravel\\ecom\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#8 C:\\Users\ashe\\OneDrive\\Desktop\\laravel\\ecom\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(590): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#9 C:\\Users\ashe\\OneDrive\\Desktop\\laravel\\ecom\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(134): Illuminate\\Container\\Container->call(Array)
+#10 C:\\Users\ashe\\OneDrive\\Desktop\\laravel\\ecom\\vendor\\symfony\\console\\Command\\Command.php(255): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#11 C:\\Users\ashe\\OneDrive\\Desktop\\laravel\\ecom\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(121): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#12 C:\\Users\ashe\\OneDrive\\Desktop\\laravel\\ecom\\vendor\\symfony\\console\\Application.php(1009): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 C:\\Users\ashe\\OneDrive\\Desktop\\laravel\\ecom\\vendor\\symfony\\console\\Application.php(273): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\MigrateMakeCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#14 C:\\Users\ashe\\OneDrive\\Desktop\\laravel\\ecom\\vendor\\symfony\\console\\Application.php(149): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#15 C:\\Users\ashe\\OneDrive\\Desktop\\laravel\\ecom\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(93): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#16 C:\\Users\ashe\\OneDrive\\Desktop\\laravel\\ecom\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(131): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#17 C:\\Users\ashe\\OneDrive\\Desktop\\laravel\\ecom\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#18 {main}
+"} 
