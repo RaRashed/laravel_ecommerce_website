@@ -46,15 +46,8 @@ class CartsController extends Controller
                 ->first();
 
        }
-       else
-       {
-        $cart = Cart::Where('ip_address', $request->ip()) 
-                ->where('product_id', $request->product_id)
-                  ->where('order_id', NULL)
-                ->first();
 
-       }
-    
+
 
 
 
@@ -71,7 +64,7 @@ class CartsController extends Controller
             $cart->user_id = Auth::id();
 
         }
-         
+
 
         $cart->ip_address = request()->ip();
         $cart->product_id = $request->product_id;
@@ -79,15 +72,15 @@ class CartsController extends Controller
 
 
     }
-        
+
         session()->flash('success','Product has added to cart');
 
         return back();
 
    // return json_encode(['status'=>'success', 'Message' => 'Item Added', 'totalitems'=>Cart::totalitems()]);
 
-    
-    
+
+
 
                 }
 
@@ -132,12 +125,12 @@ class CartsController extends Controller
         if(!is_null($cart)){
             $cart->product_quantity= $request->product_quantity;
              $cart->save();
- 
+
 
         }
         else{
             return redirect()->route('carts');
-           
+
         }
 
         session()->flash('success','Cart updated');
@@ -155,13 +148,13 @@ class CartsController extends Controller
          {
         $cart = Cart::find($id);
         if(!is_null($cart)){
-            
+
              $cart->delete();
 
         }
         else{
             return redirect()->route('carts');
-           
+
         }
         session()->flash('success','Cart deleted');
          return back();
