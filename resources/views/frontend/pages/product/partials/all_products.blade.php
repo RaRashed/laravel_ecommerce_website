@@ -27,19 +27,24 @@
     <a href=" {{route('products.show',$product->slug)}}">  {{ $product->title}}</a>
     </h5>
     <p class="card-text">taka-{{ $product->price }}</p>
-     @include('frontend.partials.cart-button')
-   
+@if(auth::user())
+@include('frontend.partials.cart-button')
+@else
+<button type="submit" class="btn btn-warning mb-3"><i class="fa fa-plus"></i>ADD to cart</button>
+<h6 class="font-bold"> <i class="fa fa-login"></i> Login first to buy product</h6>
+
+@endif
+
   </div>
 </div>
 </div>
- 
+
 @endforeach
-        
+
 
       </div>
 
       <div class="mt-4 pagination">
         {{$products->links()}}
         </div>
-          
-        
+

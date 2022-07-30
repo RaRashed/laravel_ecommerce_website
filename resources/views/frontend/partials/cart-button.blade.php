@@ -2,7 +2,7 @@
 	@csrf
 	<input type="hidden" name="product_id" value="{{$product->id}}">
 	<button type="submit" class="btn btn-warning"><i class="fa fa-plus"></i>ADD to cart</button>
-	
+
 
 
 </form>
