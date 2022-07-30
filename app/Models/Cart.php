@@ -134,11 +134,7 @@ class Cart extends Model
                 ->where('order_id',NULL)
                 ->get();
             }
-            else{
-                 //$carts = Cart::orWhere('ip_address', $request->ip()) ->get();
-                $carts = Cart::orWhere('ip_address', $ip_address ?? '') ->where('order_id',NULL)->get();
 
-            }
       $total_item=0;
         foreach ($carts as $cart) {
             $total_item +=$cart->product_quantity;
