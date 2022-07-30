@@ -102,7 +102,7 @@ class Cart extends Model
     */
 
 
-     public static function totalCarts(){
+     public function totalCarts(){
 
         if(Auth::check()){
 
@@ -121,7 +121,7 @@ class Cart extends Model
 
     }
 
-    public static function totalitems(){
+    public function totalitems(){
 
         if(Auth::check()){
 
