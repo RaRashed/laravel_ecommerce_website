@@ -101,8 +101,9 @@ class Cart extends Model
     }
     */
 
+  //re useable
 
-     public function totalCarts(){
+     public static function totalCarts(){
 
         if(Auth::check()){
 
@@ -119,9 +120,12 @@ class Cart extends Model
       // dd($carts);
         return $carts;
 
-    }
 
-    public function totalitems(){
+
+    }
+    /*
+
+    public static function totalitems(){
 
         if(Auth::check()){
 
@@ -144,6 +148,7 @@ class Cart extends Model
 
 
     }
+    */
 
 
 }

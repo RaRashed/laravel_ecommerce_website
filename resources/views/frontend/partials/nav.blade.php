@@ -1,8 +1,10 @@
 	<?php
+    /*
 
   use App\Http\Controllers\Controller;
 use App\Models\Cart;
 $total_item=Cart::totalitems();
+*/
 
 
   ?>
@@ -61,7 +63,7 @@ $total_item=Cart::totalitems();
 
                                   <span class="badge badge-danger">
 
-                                   {{ $total_item=Cart::totalitems()}}
+                                   {{-- $total_item=Cart::totalitems() --}}
                                   </span></button>
                                 </a>
                             </li>

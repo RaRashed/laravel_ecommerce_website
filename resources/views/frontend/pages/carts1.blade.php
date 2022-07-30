@@ -9,7 +9,7 @@ $carts=Cart::totalCarts();
 @section('content')
 <div class="container margin-top-20px">
 <h2 style="color:red;"><strong><center>My Cart Items</center></strong></h2>
-@if($carts=Cart::totalCarts() !=NULL)
+@if($total_item=Cart::totalitems() > 0)
 
 <table class="table table-bordered table-striped">
 	<thead>
