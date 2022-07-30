@@ -79,12 +79,12 @@ Route::group(['prefix' => '/products'], function(){
 
 
 
-	
+
 	Route::get('/','backend\ProductsController@index')->name('backend.products');
 
 	Route::get('/create','backend\ProductsController@create')->name('backend.product.create');
 
-	
+
 	Route::post('/store','backend\ProductsController@store')->name('backend.product.store');
 	Route::get('/edit/{id}','backend\ProductsController@edit')->name('backend.product.edit');
 
@@ -101,7 +101,7 @@ Route::group(['prefix' => '/contacts'], function(){
 
 
 
-	
+
 	Route::get('/','backend\ContactsController@index')->name('backend.contacts');
 
 	Route::get('/contact/delete/{id}','backend\ContactsController@delete')->name('backend.contact.delete');
@@ -193,7 +193,7 @@ Route::group(['prefix' => '/districts'], function(){
 
 Route::group(['prefix' => '/carts'], function(){
 
-Route::get('/','frontend\CartsController@index')->name('carts');
+Route::get('/','frontend\CartsController@index')->name('cartsshow');
 
 Route::post('/store','frontend\CartsController@store')->name('carts.store');
 Route::post('/update/{id}','frontend\CartsController@update')->name('carts.update');
@@ -227,7 +227,7 @@ Route::group(['prefix' => '/orders'], function(){
 	Route::get('/completed/{id}','backend\OrdersController@completed')->name('backend.order.completed');
 	Route::get('/paid/{id}','backend\OrdersController@paid')->name('backend.order.paid');
 		Route::post('/charge_update/{id}','backend\OrdersController@chargeUpdate')->name('backend.order.charge');
-			Route::get('/invoice/{id}','backend\OrdersController@generateInvoice')->name('backend.order.invoice'); 
+			Route::get('/invoice/{id}','backend\OrdersController@generateInvoice')->name('backend.order.invoice');
 
 
 

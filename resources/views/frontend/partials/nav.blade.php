@@ -38,21 +38,21 @@ $total_item=Cart::totalitems();
       <div class="input-group mb-3">
         <input class="form-control" name="search" type="text" placeholder="Search products" aria-label="Search">
       <button name="search" class="btn btn-outline-secondary" type="button"><i class="fa fa-search"></i></button>
-        
+
 
       </div>
 
     </form>
       </li>
-  
-    
+
+
     </ul>
 
 
 
 
                              <li class="nav-item">
-                                <a class="nav-link" href="{{ route('carts') }}">
+                                <a class="nav-link" href="{{ route('cartsshow') }}">
                                 <button class="btn  btn-danger">  <span class="mt-1">Cart</span>
 
                                   <span class="badge badge-danger">
@@ -91,7 +91,7 @@ $total_item=Cart::totalitems();
                             </li>
                         @endguest
     </ul>
- 
+
   </div>
 </div>
 </nav>
