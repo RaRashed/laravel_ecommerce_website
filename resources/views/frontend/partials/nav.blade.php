@@ -1,13 +1,12 @@
 	<?php
-    /*
+
   use App\Http\Controllers\Controller;
 use App\Models\Cart;
 $total_item=Cart::totalitems();
-*/
+
 
   ?>
 
-  {{--
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
 		<div class="container">
        <a href="{{ route('index') }}" class="brand-link">
@@ -101,4 +100,3 @@ $total_item=Cart::totalitems();
 </div>
 </nav>
 
---}}
