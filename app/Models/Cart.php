@@ -120,8 +120,6 @@ class Cart extends Model
       // dd($carts);
         return $carts;
 
-
-
     }
     /*
 
