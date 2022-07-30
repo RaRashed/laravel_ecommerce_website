@@ -115,11 +115,6 @@ class Cart extends Model
                 ->where('order_id',NULL)
                 ->get();
             }
-            else{
-                 //$carts = Cart::orWhere('ip_address', $request->ip()) ->get();
-                $carts = Cart::orWhere('ip_address', $ip_address ?? '') ->where('order_id',NULL)->get();
-
-            }
 
       // dd($carts);
         return $carts;
