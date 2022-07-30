@@ -18,7 +18,8 @@ class UserSeeder extends Seeder
             'username' =>"RaRashed",
             'phone_no' =>"123456",
             'email' => "rashed@gmail.com",
-            'password' => "12345678",
+            'password' => Hash::make("12345678"),
+
             'street_address' =>"mirpur",
             'division_id' =>"1",
             'district_id'=>"1",
