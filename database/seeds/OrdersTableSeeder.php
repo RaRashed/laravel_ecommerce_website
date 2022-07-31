@@ -18,7 +18,7 @@ class OrdersTableSeeder extends Seeder
     	'ip_address'=>"172.0.0.1",
     	'name' => "Rashed",
     	'phone_no'=> "01827801715",
-    	'shipping_address' =>"mirpur",
+    	'Shipping_address' =>"mirpur",
     	'email'=> "abc@gmail.com",
     	'message'=>"hey",
         'transaction_id' =>"12345"
