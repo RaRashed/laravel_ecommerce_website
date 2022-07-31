@@ -10,7 +10,7 @@ $total_item=Cart::totalitems();
       <img src="{{asset('images/logo/Rashed.jpg')}}" class="brand-image img-circle" alt="Rashed Logo" width="70">
     </a>
 <b>  <a class="navbar-brand" href="{{ route('index') }}" style="color: white" >Search and Buy</a></b>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 

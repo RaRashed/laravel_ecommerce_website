@@ -6,12 +6,16 @@
 	margin-right:auto!important;
 	margin-top: 12px;
 	margin-bottom: -10px;
-	background-color: #000000!important;
+	background-color: #BC8F8F !important;
 
 
 }
+
+.iconcolor{
+    color: white !important;
+}
 .nav-item{
-	
+
 
 }
 .hidden{
@@ -19,7 +23,7 @@
 }
 
 .bg.light{
-	background-color: #0000000!important;
+	background-color: ##BC8F8F!important;
 }
 
 
@@ -42,7 +46,7 @@ body{
 
 	padding: 20px;
 	margin-top: 20px;
-	background: #000000;
+	background: #BC8F8F;
 	color: white;
 }
 .pointer{
