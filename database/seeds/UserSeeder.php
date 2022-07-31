@@ -13,11 +13,25 @@ class UserSeeder extends Seeder
     public function run()
     {
         User::create([
-            'first_name' =>"Rashed",
+            'first_name' =>"Rashedul Aziz",
             'last_name' =>"Rashed",
-            'username' =>"RaaaaRashed",
+            'username' =>"Rashed",
             'phone_no' =>"1234567812",
             'email' => "rarashed@gmail.com",
+            'password' => Hash::make("12345678"),
+
+            'street_address' =>"mirpur",
+            'division_id' =>"1",
+            'district_id'=>"1",
+
+
+        ]);
+        User::create([
+            'first_name' =>"Rashedul Aziz",
+            'last_name' =>"Rashed",
+            'username' =>"RaRashedRa",
+            'phone_no' =>"01827801715",
+            'email' => "rarashedra@gmail.com",
             'password' => Hash::make("12345678"),
 
             'street_address' =>"mirpur",

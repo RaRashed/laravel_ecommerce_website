@@ -6,7 +6,7 @@ use App\Models\Payment;
 use App\Models\Setting;
 $carts=Cart::totalCarts();
 $shipping_cost=Setting::cost();
- 
+
   ?>
 
 @extends('frontend.layouts.master')
@@ -21,13 +21,13 @@ $shipping_cost=Setting::cost();
 <div class="row">
 	<div class=" col-md-7">
 		@foreach($carts=Cart::totalCarts() as $cart)
-<p>{{$cart->product->title}} - 
+<p>{{$cart->product->title}} -
 <strong>{{$cart->product->price}} taka</strong>
 - {{$cart->product_quantity}} item
 </p>
 
 @endforeach
-		
+
 	</div>
 	<div class="col-md-5">
 
@@ -54,10 +54,10 @@ $shipping_cost=Setting::cost();
 
 
 
-	
+
 </div>
 <div class="card card-body mt-2 mb-4">
-	
+
 <h2>Shipping  Address</h2>
 <br>
 <form method="POST" action="{{ route('checkouts.store') }}">
@@ -76,8 +76,8 @@ $shipping_cost=Setting::cost();
                                 @enderror
                             </div>
                         </div>
-                        
-                    
+
+
 
                         <div class="form-group row">
                             <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
@@ -105,10 +105,10 @@ $shipping_cost=Setting::cost();
                                 @enderror
                             </div>
                         </div>
-                          
+
                            </div>
-                          
-                          
+
+
 
                            <div class="form-group row">
                             <label for="message" class="col-md-4 col-form-label text-md-right">{{ __('Additional  Message(optional)') }}</label>
@@ -158,16 +158,16 @@ $shipping_cost=Setting::cost();
                             		@foreach( $payments as $payment)
                             		<option value="{{$payment->short_name}}">
                             			{{$payment->name}}
-                            			
+
                             		</option>
 
                             		@endforeach
-                            	
+
                             	</select>
-                            	
+
                             	@foreach($payments as $payment)
-                            
-                            		
+
+
                             		@if($payment->short_name =="rocket")
                             			<div id="payment_{{$payment->short_name}}" class="alert alert-success text-center hidden">
                             			<h3>
@@ -182,7 +182,7 @@ $shipping_cost=Setting::cost();
 
                             			<div class="row">
                             				<div class="col-md-6">
-                            					
+
                             				</div>
                             				<div class="col-md-6">
                             					<div id="payment_{{$payment->short_name}}" class="alert alert-success text-center hidden">
@@ -193,18 +193,18 @@ $shipping_cost=Setting::cost();
                             				<strong> Amount Type: {{$payment->type}}</strong>
                             			</p>
                             			<div class=" alert alert-success">
-                            				please sent above mony to this Bkash No and write your transaction code below there
-                            				
+                            				please sent above moneyy to this Bkash No and write your transaction code below there
+
                             			</div>
-                            			
+
                             		</div>
 
-                            					
+
                             				</div>
                             			</div>
 
                             		@endif
-                            	
+
 
 
                             	@endforeach
@@ -220,7 +220,7 @@ $shipping_cost=Setting::cost();
                                 </button>
                             </div>
                         </div>
-                                 
+
 
                                 @error('payment_method')
                                     <span class="invalid-feedback" role="alert">
@@ -230,7 +230,7 @@ $shipping_cost=Setting::cost();
                             </div>
                         </div>
 
-                  
+
                     </form>
 
 </p>
@@ -243,7 +243,7 @@ $shipping_cost=Setting::cost();
 
 
 
-	
+
 </div>
 
 </div>
@@ -255,7 +255,7 @@ $shipping_cost=Setting::cost();
                             	<script type="text/javascript">
                             		  $("#payments").change(function(){
                             		$payment_method = $("#payments").val();
-                            		
+
                             		if ($payment_method=="rocket") {
                             			$("#payment_rocket").removeClass('hidden');
                             			$("#payment_bkash").addClass('hidden');
@@ -277,8 +277,8 @@ $shipping_cost=Setting::cost();
                             			$("#transaction_id").removeClass('hidden');;
 
                             		}
- 
-                        
+
+
                             })</script>
 
 

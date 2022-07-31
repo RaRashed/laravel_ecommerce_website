@@ -1,12 +1,7 @@
 	<?php
-    /*
-
   use App\Http\Controllers\Controller;
 use App\Models\Cart;
 $total_item=Cart::totalitems();
-*/
-
-
   ?>
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -58,12 +53,12 @@ $total_item=Cart::totalitems();
 
 
                              <li class="nav-item">
-                                <a class="nav-link" href="{{ route('cartsshow') }}">
+                                <a class="nav-link" href="{{ route('carts') }}">
                                 <button class="btn  btn-danger">  <span class="mt-1">Cart</span>
 
                                   <span class="badge badge-danger">
 
-                                   {{-- $total_item=Cart::totalitems() --}}
+                                   {{ $total_item=Cart::totalitems() }}
                                   </span></button>
                                 </a>
                             </li>

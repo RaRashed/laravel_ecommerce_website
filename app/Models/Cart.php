@@ -105,7 +105,7 @@ class Cart extends Model
 
      public static function totalCarts(){
 
-        if(Auth::check()){
+
 
        // $carts = Cart::orWhere('user_id', Auth::id())
                // ->orWhere('ip_address', $request->ip())
@@ -115,30 +115,30 @@ class Cart extends Model
               //->orWhere('ip_address', $ip_address ?? '')
                 ->where('order_id',NULL)
                 ->get();
-            }
+
 
       // dd($carts);
         return $carts;
 
     }
-    /*
+
 
     public static function totalitems(){
 
-        if(Auth::check()){
+
 
        // $carts = Cart::orWhere('user_id', Auth::id())
                // ->orWhere('ip_address', $request->ip())
                 //->get();
 
-              $carts1 = Cart::where('user_id', Auth::id())
+              $carts = Cart::where('user_id', Auth::id())
                //->orWhere('ip_address', $ip_address ?? '')
                 ->where('order_id',NULL)
                 ->get();
-            }
+
 
       $total_item=0;
-        foreach ($carts1 as $cart) {
+        foreach ($carts as $cart) {
             $total_item +=$cart->product_quantity;
         }
       //dd($total_item);
@@ -146,7 +146,7 @@ class Cart extends Model
 
 
     }
-    */
+
 
 
 }

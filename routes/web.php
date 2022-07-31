@@ -193,7 +193,7 @@ Route::group(['prefix' => '/districts'], function(){
 
 Route::group(['prefix' => '/carts'], function(){
 
-Route::get('/','frontend\CartsController@index')->name('cartsshow');
+Route::get('/','frontend\CartsController@index')->name('carts');
 
 Route::post('/store','frontend\CartsController@store')->name('carts.store');
 Route::post('/update/{id}','frontend\CartsController@update')->name('carts.update');
