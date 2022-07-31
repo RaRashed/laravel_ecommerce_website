@@ -15,9 +15,9 @@ class UserSeeder extends Seeder
         User::create([
             'first_name' =>"Rashedul Aziz",
             'last_name' =>"Rashed",
-            'username' =>"Rashed",
-            'phone_no' =>"1234567812",
-            'email' => "rarashed@gmail.com",
+            'username' =>"admina",
+            'phone_no' =>"01621796596",
+            'email' => "admina@gmail.com",
             'password' => Hash::make("12345678"),
 
             'street_address' =>"mirpur",
@@ -29,9 +29,9 @@ class UserSeeder extends Seeder
         User::create([
             'first_name' =>"Rashedul Aziz",
             'last_name' =>"Rashed",
-            'username' =>"RaRashedRa",
-            'phone_no' =>"01827801715",
-            'email' => "rarashedra@gmail.com",
+            'username' =>"adminab",
+            'phone_no' =>"01814784235",
+            'email' => "adminab@gmail.com",
             'password' => Hash::make("12345678"),
 
             'street_address' =>"mirpur",
