@@ -12,6 +12,7 @@ class CartsTableSeeder extends Seeder
      */
     public function run()
     {
+        /*
         Cart::create([
             'product_id'=>"6",
             'user_id' =>"1",
@@ -26,5 +27,7 @@ class CartsTableSeeder extends Seeder
             'ip_address' => "172.0.0.1",
             'product_quantity' =>"1"
         ]);
+
+        */
     }
 }
