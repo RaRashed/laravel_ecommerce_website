@@ -60,7 +60,7 @@ class CheckoutsController extends Controller
         $order->name = $request->name;
         $order->email = $request->email;
         $order->phone_no = $request->phone_no;
-        $order->shipping_address = $request->shipping_address;
+        $order->Shipping_address = $request->shipping_address;
         $order->message = $request->message;
                $order->ip_address = $request->ip();
                $order->transaction_id = $request->transaction_id;
@@ -75,8 +75,8 @@ class CheckoutsController extends Controller
           foreach (Cart::totalCarts() as $cart) {
             $cart->order_id=$order->id;
               $cart->save();
-              
-   } 
+
+   }
 
           session()->flash('success','Your Order Has taken Successfully !!! Please wait, admin Will soon confirm it ');
 
