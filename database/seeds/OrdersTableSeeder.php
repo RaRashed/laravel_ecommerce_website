@@ -13,7 +13,7 @@ class OrdersTableSeeder extends Seeder
     public function run()
     {
         Order::create([
-            'user_id' =>"1",
+            'user_id' =>"5",
         'payment_id'=>"1",
     	'ip_address'=>"172.0.0.1",
     	'name' => "Rashed",
