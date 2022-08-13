@@ -43,7 +43,6 @@ class LoginController extends Controller
     {
         $this->middleware('guest')->except('logout');
     }
-
     public function github()
     {
         return Socialite::driver('github')->redirect();
@@ -70,4 +69,5 @@ class LoginController extends Controller
 
 
     }
+
 }
