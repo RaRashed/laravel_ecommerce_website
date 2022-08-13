@@ -17,21 +17,21 @@ class CreateUsersTable extends Migration
             $table->bigIncrements('id');
             $table->string('first_name');
              $table->string('last_name')->nullable();
-              $table->string('username')->unique();
-                 $table->string('phone_no')->unique();
+              $table->string('username')->nullable();
+                 $table->string('phone_no')->nullable();
             $table->string('email')->unique();
                $table->string('password');
 
 
-                  $table->string('street_address');
-                     $table->unsignedinteger('division_id')->comment('Division Table ID');
-                     $table->unsignedinteger('district_id')->comment('District Table ID');
+                  $table->string('street_address')->nullable();
+                     $table->unsignedinteger('division_id')->comment('Division Table ID')->nullable();
+                     $table->unsignedinteger('district_id')->comment('District Table ID')->nullable();
 
 
 
 
 
-                         
+
                           $table->unsignedInteger('status')->default(0)->comment('0=Inactive|1=Active|2=Ban');
                           $table->string('ip_address')->nullable();
                           $table->string('avatar')->nullable();
@@ -48,8 +48,8 @@ class CreateUsersTable extends Migration
 
 
 
-   
-            
+
+
             $table->rememberToken();
             $table->timestamps();
         });

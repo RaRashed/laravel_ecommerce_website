@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\Auth\LoginController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -247,3 +249,18 @@ Route::get('/home', 'HomeController@index')->name('home');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+
+//GITHUB ROUTES
+Route::get('login/github',[LoginController::class,'github'])->name('github.login');
+Route::get('login/github/redirect',[LoginController::class,'githubredirect'])->name('github.redirect');
+
+
+//GOOGLE ROUTES
+Route::get('login/google',[LoginController::class,'google'])->name('google.login');
+Route::get('login/google/redirect',[LoginController::class,'googleredirect'])->name('google.redirect');
+
+//FACEBOOK ROUTES
+Route::get('login/facebook',[LoginController::class,'facebook'])->name('facebook.login');
+Route::get('login/facebook/redirect',[LoginController::class,'facebookredirect'])->name('facebook.redirect');
