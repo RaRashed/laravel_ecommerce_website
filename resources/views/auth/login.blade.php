@@ -67,8 +67,8 @@
                         <div class="form-group row mt-3">
                             <div class="col-md-6 offset-md-3">
                                  <a href="{{ route('google.login') }}" class="btn btn-danger btn-block"> login with google <i class="fa-brands fa-google"></i></a>
-                                <a href="{{ route('github.login') }}" class="btn btn-info btn-block"> login with github <i class="fa-brands fa-github"></i></a>
-                                {{-- <a href="{{ route('facebook.login') }}" class="btn btn-info btn-block"> login with facebook <i class="fa-brands fa-facebook"></i></a> --}}
+                                <a href="{{ route('github.login') }}" class="btn btn-dark btn-block"> login with github <i class="fa-brands fa-github"></i></a>
+                                 <a href="{{ route('facebook.login') }}" class="btn btn-primary btn-block"> login with facebook <i class="fa-brands fa-facebook"></i></a>
                             </div>
                         </div>
                     </form>
