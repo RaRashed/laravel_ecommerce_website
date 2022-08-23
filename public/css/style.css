@@ -6,7 +6,8 @@
 	margin-right:auto!important;
 	margin-top: 12px;
 	margin-bottom: -10px;
-	background-color: #BC8F8F !important;
+	background-color: black !important;
+    /* #BC8F8F */
 
 
 }
@@ -23,7 +24,7 @@
 }
 
 .bg.light{
-	background-color: #BC8F8F!important;
+	background-color: black!important;
 }
 
 
@@ -46,7 +47,7 @@ body{
 
 	padding: 20px;
 	margin-top: 20px;
-	background: #BC8F8F;
+	background: black;
 	color: white;
 }
 .pointer{

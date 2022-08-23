@@ -11,7 +11,7 @@ $total_item=Cart::totalitems();
     </a>
 <b>  <a class="navbar-brand" href="{{ route('index') }}" style="color: white" >Search and Buy</a></b>
   <button class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon iconcolor"></span>
+    <span class="navbar-toggler-icon iconcolor">MENU</span>
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
